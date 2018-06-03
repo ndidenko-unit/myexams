@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <unistd.h>
+
+
+int main()
+{
+    char *str;
+    int count;
+
+    str = "Hello";
+    while (*str++)
+        count++;
+    str -= count + 1;
+    printf("%s", str);
+    printf("%d", count);
+    return(0);
+    }
